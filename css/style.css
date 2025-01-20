@@ -1,0 +1,590 @@
+@import url(https://fonts.googleapis.com/css?family=Bruno+Ace+SC:regular);
+
+
+@font-face {
+    font-family: "Made Outer Sans";
+    src: url('fonts/MADEOuterSans.woff2') format('woff2'),
+         url('fonts/MADEOuterSans.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Made Outer Sans-Medium";
+    src: url('fonts/MADEOuterSans-Medium.woff2') format('woff2'),
+         url('fonts/MADEOuterSans-Medium.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Made Outer Sans", sans-serif;
+    line-height: 1;
+    color: #FFFFFF;
+    background-color: #000;
+    background-image: url('/img/background (1).png'); 
+    background-repeat: no-repeat; /
+    background-size: cover; 
+    background-position: center; 
+
+    }
+html,body{
+    height: 100%;
+    min-width: 320px;
+}
+a{
+    text-decoration: none;
+}
+li{
+   list-style: none; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*----------------------------------------*/
+.wrapper{
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*----------------------------------------*/
+
+.title{
+    font-family: Made Outer Sans, Helvetica;
+    color: #FFFFFF;
+    font-size: 44px;
+    line-height: normal;
+    
+
+}
+
+/*----------------------------------------*/
+.page{
+    flex: 1 1 auto;
+}
+
+.page__main{}
+.page__advantages{}
+/*----------------------------------------*/
+*, *::before,*::after{
+    margin:0;
+    padding:0;
+    border:none;
+    box-sizing: border-box;
+}
+
+
+[class*="__container"]{
+   max-width: 1230px;
+   margin: 0 auto;
+   padding: 0px 15px;
+}
+
+/* ------------------------------------------------------------*/
+
+.header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 50;
+
+}
+.header_container {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    gap: 500px;
+    align-items: center;
+    min-height: 84px;
+}
+.header__logo {
+  padding: 15px;
+}
+.header__menu {}
+
+
+.menu {
+    padding: 20px 20px 20px 0px;
+    border-radius:5px;
+}
+.menu__list {
+    display: flex;
+    gap: 75px;
+    
+}
+.menu__item {}
+.menu__link {
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.menu__link:hover{
+    text-decoration: underline;
+}
+
+header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+/* Базові стилі для кнопки бургер-меню */
+.burger {
+  display: none; /* Сховати бургер на великих екранах */
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger__line {
+  width: 25px;
+  height: 3px;
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 744px) {
+  .burger {
+    display: flex; /* Показати бургер на мобільних */
+  }
+
+  .menu__list {
+    display: none; /* Ховати меню за замовчуванням */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Відступ від хедера */
+    right: 20px;
+    background: #000;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .menu__list.active {
+    display: flex; /* Показати меню, коли бургер відкритий */
+  }
+}
+/* ---------------------------------------------------------*/
+.main {
+    padding-bottom: 400px;
+}
+.main__container {
+    display: flex;
+    
+}
+.main__title {
+    font-family: "Made Outer Sans", Helvetica;
+    color: #FFFFFF;
+    font-size: 64px;
+    line-height: normal;
+}
+.main__actions {}
+.actions-main {
+    display: flex;
+    align-items: center;
+}
+.main__title:not(:last-child){
+    margin-bottom: 59px;
+}
+
+.actions-main__button {
+    
+    box-sizing: border-box;
+    position: relative;
+    width: 177px;
+    height: 52px;
+    background-color: #faff00;
+    border-radius: 30px;
+    font-family: "MADE Outer Sans-Medium", Helvetica;
+    font-weight: 500;
+    color:rgb(0, 0, 0);
+    font-size: 16px;
+}
+.background {}
+.main__content{
+    flex: 0 1 50%;
+	align-self: flex-end;
+	padding-top: 120px;
+	padding-bottom: 60px;
+	padding-right: 20px;
+    
+}
+
+@media (max-width: 767.98px){
+    .main__content{
+        flex: 1 1 100%;
+        
+    }
+}
+
+/* --------------------------------------*/
+
+.advantages {
+    padding-top: 200px;
+    padding-bottom: 250px;
+  }
+  
+  .advantages__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+  }
+  
+  .item-adv {
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+  }
+  
+  .item-adv__icon {
+    background: #000; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .item-adv__icon img {
+    width: auto; 
+    height: auto;
+  }
+  
+  .item-adv__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+  }
+  
+  .item-adv__title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .item-adv__text {
+    font-size: 14px;
+    color: #ccc; 
+  }
+  
+  
+  @media (max-width: 767px) {
+    .advantages__items {
+      grid-template-columns: 1fr; 
+    }
+  
+    .item-adv {
+      flex-direction: column; 
+      text-align: center;
+    }
+  
+    .item-adv__icon {
+      margin-bottom: 10px;
+    }
+  }
+  
+ /*-----------------------------------------*/
+.page__trainers {}
+.trainers {
+    padding-top: 200px;
+    padding-bottom: 250px;
+}
+.trainers__container {}
+.trainers__title {
+    margin-bottom: 100px;
+}
+.title {}
+
+@media(max-width: 991.98px){
+    .trainers {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .trainers__title {
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 767.98px){
+    .trainers {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .trainers__title {
+        margin-bottom: 30px;
+    }
+
+}
+
+ /*-----------------------------------------*/
+ .footer {
+    background-color: #000; 
+    color: #fff; 
+    padding: 40px 15px;
+  }
+  
+  .footer__container {
+    max-width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer__body {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .footer__column {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer__logo img {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+  
+  .footer__description {
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 1.5;
+    margin-top: 5px; 
+    text-align: left;
+    max-width: 210px; 
+  }
+  
+  .footer__title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer__text {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .footer__text a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  .footer__text a:hover {
+    color: #faff00;
+  }
+  
+  .footer__socials {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .social__link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .social__link:hover {
+    color: #faff00;
+  }
+  
+  
+  .footer__bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    padding-top: 10px;
+    margin-top: 20px;
+  }
+
+  .footer__socials {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.social__link img {
+    width: 24px; 
+    height: 24px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social__link img:hover {
+    transform: scale(1.1); 
+    filter: brightness(1.2);
+}
+
+/*---------------------------------------------*/
+/* Gym Membership Section */
+.page__membership {
+  padding: 50px 20px;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+.membership__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.membership__title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.membership__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.membership__item {
+  background-color: #181818;
+  padding: 20px;
+  border-radius: 10px;
+  
+  transition: transform 0.3s;
+}
+
+.membership__item:hover {
+  transform: translateY(-10px);
+}
+
+.item-mem__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.item-mem__price {
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.item-mem__list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-mem__list li:before {
+  content: url('/img/Vector.svg');
+  
+  left: 0;
+  
+}
+.membership__actions {
+  margin-top: 15px;
+}
+
+.action-membership__button {
+  box-sizing: border-box;
+    position: relative;
+    width: 177px;
+    height: 52px;
+    background-color: #faff00;
+    border-radius: 30px;
+    font-family: "MADE Outer Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+.action-membership__button:hover {
+  background-color: #faff00;
+}
+
+/* Trainers Section */
+.page__trainers {
+  padding: 50px 20px;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.trainers__title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.swiper-trainers__wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.slide-swiper-trainers {
+  background-color: #202020;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.slide-swiper-trainers:hover {
+  transform: translateY(-10px);
+}
+
+.slide-swiper-trainers__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.trainer-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0 10px;
+}
+
+.trainer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.trainer-social__link img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.trainer-social__link img:hover {
+  transform: scale(1.2);
+}
