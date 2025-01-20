@@ -22,8 +22,8 @@ body {
     line-height: 1;
     color: #FFFFFF;
     background-color: #000;
-    background-image: url('/img/background (1).png'); 
-    background-repeat: no-repeat; /
+    background-image: url('/img/background-(1)png'); 
+    background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center; 
 
@@ -504,7 +504,7 @@ header_container {
 }
 
 .item-mem__list li:before {
-  content: url('/img/Vector.svg');
+  content: url('/img/vector_.svg');
   
   left: 0;
   
