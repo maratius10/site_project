@@ -22,13 +22,8 @@ body {
     line-height: 1;
     color: #FFFFFF;
     background-color: #000;
-<<<<<<< HEAD
-    background-image: url('/img/other/background (1).png'); 
+    background-image: url('/img/other/background_1.png'); 
     background-repeat: no-repeat; /
-=======
-    background-image: url('/img/background-(1)png'); 
-    background-repeat: no-repeat; 
->>>>>>> 9951419ef3ffeb9ff31cfa898792f76c31d33fb6
     background-size: cover; 
     background-position: center; 
 
