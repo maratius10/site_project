@@ -22,8 +22,13 @@ body {
     line-height: 1;
     color: #FFFFFF;
     background-color: #000;
+<<<<<<< HEAD
     background-image: url('/img/other/background (1).png'); 
     background-repeat: no-repeat; /
+=======
+    background-image: url('/img/background-(1)png'); 
+    background-repeat: no-repeat; 
+>>>>>>> 9951419ef3ffeb9ff31cfa898792f76c31d33fb6
     background-size: cover; 
     background-position: center; 
 
@@ -499,7 +504,11 @@ header_container {
 }
 
 .item-mem__list li:before {
+<<<<<<< HEAD
   content: url('/img/other/Vector.svg');
+=======
+  content: url('/img/vector_.svg');
+>>>>>>> 9951419ef3ffeb9ff31cfa898792f76c31d33fb6
   
   left: 0;
   
