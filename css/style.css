@@ -22,7 +22,7 @@ body {
     line-height: 1;
     color: #FFFFFF;
     background-color: #000;
-    background-image: url('/img/background (1).png'); 
+    background-image: url('/img/other/background (1).png'); 
     background-repeat: no-repeat; /
     background-size: cover; 
     background-position: center; 
@@ -134,11 +134,6 @@ header_container {
   padding: 10px 20px;
 }
 
-.menu__list {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
 
 .menu__link {
   text-decoration: none;
@@ -504,7 +499,7 @@ header_container {
 }
 
 .item-mem__list li:before {
-  content: url('/img/Vector.svg');
+  content: url('/img/other/Vector.svg');
   
   left: 0;
   
