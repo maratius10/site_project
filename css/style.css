@@ -22,8 +22,13 @@ body {
     line-height: 1;
     color: #FFFFFF;
     background-color: #000;
+<<<<<<< HEAD
     background-image: url('/img/other/background (1).png'); 
     background-repeat: no-repeat; 
+=======
+    background-image: url('/img/other/background_1.png'); 
+    background-repeat: no-repeat; /
+>>>>>>> debc2a67387ed6a58c20e2d1649e255a328c021b
     background-size: cover; 
     background-position: center; 
 
