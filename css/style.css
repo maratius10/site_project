@@ -22,13 +22,8 @@ body {
     line-height: 1;
     color: #FFFFFF;
     background-color: #000;
-<<<<<<< HEAD
     background-image: url('/img/other/background (1).png'); 
-    background-repeat: no-repeat; /
-=======
-    background-image: url('/img/background-(1)png'); 
     background-repeat: no-repeat; 
->>>>>>> 9951419ef3ffeb9ff31cfa898792f76c31d33fb6
     background-size: cover; 
     background-position: center; 
 
@@ -48,6 +43,75 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Зменшення розміру тексту */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px; /* Ще менший текст */
+  }
+}
+
+
+/* Для планшетів */
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    padding: 10px; /* Зменшення внутрішніх відступів */
+  }
+
+  .nav {
+    flex-direction: column; /* Вертикальне меню */
+    gap: 10px;
+  }
+
+  .main__content {
+    grid-template-columns: 1fr; /* Один стовпчик для контенту */
+  }
+}
+
+/* Для мобільних */
+@media (max-width: 480px) {
+  .header {
+    font-size: 16px; /* Зменшений текст */
+    padding: 5px; /* Зменшені відступи */
+  }
+
+  .button {
+    padding: 8px 15px;
+    font-size: 12px; /* Менший розмір тексту */
+  }
+}
+
+.main__content {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .main__content {
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки на планшетах */
+  }
+}
+
+@media (max-width: 480px) {
+  .main__content {
+    grid-template-columns: 1fr; /* 1 колонка на мобільних */
+  }
+}
+
+/*----------------------------------------*/
+img {
+  max-width: 100%;
+  height: auto; /* Пропорційне масштабування */
+}
 
 /*----------------------------------------*/
 .wrapper{
@@ -66,6 +130,95 @@ html {
     
 
 }
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Логотип ліворуч, навігація праворуч */
+  align-items: center; /* Вирівнювання елементів по центру */
+  padding: 20px 40px;
+  /* background-color: black; */
+  color: white;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.header__nav {
+  display: flex;
+  gap: 20px; /* Відступи між пунктами меню */
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.header__nav a:hover {
+  color: yellow; /* Підсвітка при наведенні */
+}
+
+/* Кнопка */
+.header__button {
+  padding: 10px 20px;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.header__button:hover {
+  background-color: orange; /* Колір при наведенні */
+}
+
+/* Адаптація для планшетів */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Елементи розташовуються вертикально */
+    align-items: center;
+  }
+
+  .header__nav {
+    margin-top: 10px;
+    flex-direction: column; /* Навігація стає вертикальною */
+    gap: 10px;
+  }
+
+  .header__button {
+    margin-top: 10px;
+  }
+}
+
+/* Адаптація для мобільних */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 20px; /* Менші відступи */
+  }
+
+  .header__logo {
+    font-size: 20px; /* Зменшення розміру тексту */
+  }
+
+  .header__nav {
+    gap: 5px; /* Менше місця між пунктами */
+  }
+
+  .header__nav a {
+    font-size: 14px;
+  }
+
+  .header__button {
+    font-size: 14px;
+    padding: 8px 15px; /* Зменшення кнопки */
+  }
+}
+
+
 
 /*----------------------------------------*/
 .page{
@@ -92,13 +245,14 @@ html {
 /* ------------------------------------------------------------*/
 
 .header {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   z-index: 50;
-
+  height: auto;
+  width: 100%; /* Ширина адаптується до екрана */
+  max-width: 1280px; /* Але не більше заданого */
+  margin: 0 auto; /* Центрування */
 }
+
+
+
 .header_container {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -109,6 +263,8 @@ html {
 }
 .header__logo {
   padding: 15px;
+  width: 145px;
+   height: 30px;
 }
 .header__menu {}
 
@@ -223,7 +379,7 @@ header_container {
 }
 .background {}
 .main__content{
-    flex: 0 1 50%;
+  flex: 0 1 50%;
 	align-self: flex-end;
 	padding-top: 120px;
 	padding-bottom: 60px;
@@ -504,11 +660,7 @@ header_container {
 }
 
 .item-mem__list li:before {
-<<<<<<< HEAD
-  content: url('/img/other/Vector.svg');
-=======
   content: url('/img/vector_.svg');
->>>>>>> 9951419ef3ffeb9ff31cfa898792f76c31d33fb6
   
   left: 0;
   
