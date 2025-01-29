@@ -49,13 +49,13 @@ body {
 
 @media (max-width: 768px) {
   body {
-    font-size: 14px; /* Зменшення розміру тексту */
+    font-size: 14px; 
   }
 }
 
 @media (max-width: 480px) {
   body {
-    font-size: 12px; /* Ще менший текст */
+    font-size: 12px;
   }
 }
 
@@ -64,29 +64,28 @@ body {
 @media (max-width: 768px) {
   .header {
     height: auto;
-    padding: 10px; /* Зменшення внутрішніх відступів */
+    padding: 10px; 
   }
 
   .nav {
-    flex-direction: column; /* Вертикальне меню */
+    flex-direction: column; 
     gap: 10px;
   }
 
   .main__content {
-    grid-template-columns: 1fr; /* Один стовпчик для контенту */
+    grid-template-columns: 1fr;
   }
 }
 
 /* Для мобільних */
 @media (max-width: 480px) {
   .header {
-    font-size: 16px; /* Зменшений текст */
-    padding: 5px; /* Зменшені відступи */
-  }
+    font-size: 16px; 
+    padding: 5px; 
 
   .button {
     padding: 8px 15px;
-    font-size: 12px; /* Менший розмір тексту */
+    font-size: 12px; 
   }
 }
 
@@ -97,20 +96,20 @@ body {
 
 @media (max-width: 768px) {
   .main__content {
-    grid-template-columns: repeat(2, 1fr); /* 2 колонки на планшетах */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 480px) {
   .main__content {
-    grid-template-columns: 1fr; /* 1 колонка на мобільних */
+    grid-template-columns: 1fr; 
   }
 }
 
 /*----------------------------------------*/
 img {
   max-width: 100%;
-  height: auto; /* Пропорційне масштабування */
+  height: auto; 
 }
 
 /*----------------------------------------*/
@@ -133,10 +132,9 @@ img {
 
 .header {
   display: flex;
-  justify-content: space-between; /* Логотип ліворуч, навігація праворуч */
-  align-items: center; /* Вирівнювання елементів по центру */
+  justify-content: space-between; 
+  align-items: center; 
   padding: 20px 40px;
-  /* background-color: black; */
   color: white;
 }
 
@@ -148,7 +146,7 @@ img {
 
 .header__nav {
   display: flex;
-  gap: 20px; /* Відступи між пунктами меню */
+  gap: 20px; 
 }
 
 .header__nav a {
@@ -158,7 +156,7 @@ img {
 }
 
 .header__nav a:hover {
-  color: yellow; /* Підсвітка при наведенні */
+  color: yellow; 
 }
 
 /* Кнопка */
@@ -173,19 +171,19 @@ img {
 }
 
 .header__button:hover {
-  background-color: orange; /* Колір при наведенні */
+  background-color: orange; 
 }
 
 /* Адаптація для планшетів */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column; /* Елементи розташовуються вертикально */
+    flex-direction: column; 
     align-items: center;
   }
 
   .header__nav {
     margin-top: 10px;
-    flex-direction: column; /* Навігація стає вертикальною */
+    flex-direction: column; 
     gap: 10px;
   }
 
@@ -197,15 +195,15 @@ img {
 /* Адаптація для мобільних */
 @media (max-width: 480px) {
   .header {
-    padding: 10px 20px; /* Менші відступи */
+    padding: 10px 20px; 
   }
 
   .header__logo {
-    font-size: 20px; /* Зменшення розміру тексту */
+    font-size: 20px; 
   }
 
   .header__nav {
-    gap: 5px; /* Менше місця між пунктами */
+    gap: 5px; 
   }
 
   .header__nav a {
@@ -214,35 +212,10 @@ img {
 
   .header__button {
     font-size: 14px;
-    padding: 8px 15px; /* Зменшення кнопки */
+    padding: 8px 15px; 
   }
 }
 
-/* .header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px; 
-}
-
-
-@media (max-width: 1024px) {
-  .header__container {
-      gap: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .header__container {
-      gap: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .header__container {
-      gap: 5px;
-  }
-} */
 
 
 /*----------------------------------------*/
@@ -271,58 +244,57 @@ img {
 
 .header {
   height: auto;
-  width: 100%; /* Ширина адаптується до екрана */
-  max-width: 1280px; /* Але не більше заданого */
-  margin: 0 auto; /* Центрування */
+  width: 100%; 
+  max-width: 1280px;
+  margin: 0 auto; 
 }
 
 
 
 .header__container {
-  padding: 5px 20px; /* Відступи для заголовка */
+  padding: 5px 20px; 
   display: flex;
-  justify-content: space-between; /* Простір між логотипом і правою частиною */
+  justify-content: space-between; 
   align-items: center;
   min-height: 84px;
-  gap: 20px; /* Простір між елементами */
+  gap: 20px; 
 }
 
 /* Логотип */
 .header__logo {
   display: flex;
   align-items: center;
-  width: auto; /* Логотип адаптивний */
-  height: 40px; /* Розмір логотипа */
+  width: auto; 
+  height: 40px; 
   padding: 0;
 }
 
 /* Медіа-запити для адаптивності */
 @media (max-width: 768px) {
   .header__container {
-      gap: 10px; /* Менший gap на планшетах */
-      padding: 5px 10px; /* Зменшуємо padding */
+      gap: 10px; 
+      padding: 5px 10px;
   }
 
   .header__logo {
-      height: 30px; /* Зменшуємо розмір логотипу */
+      height: 30px; 
   }
 }
 
 @media (max-width: 480px) {
   .header__container {
-      gap: 5px; /* Мінімальний gap для маленьких екранів */
+      gap: 5px; 
   }
 
   .header__logo {
-      height: 25px; /* Ще менший розмір логотипу */
-  }
+      height: 25px; 
 }
 
 .header__menu {
   display: flex;
-  align-items: center; /* Вирівнювання кнопок по центру вертикалі */
-  gap: 20px; /* Відстань між кнопками */
-  margin-left: auto; /* Вирівнюємо меню праворуч */
+  align-items: center; 
+  gap: 20px; 
+  margin-left: auto; 
 }
 
 
@@ -362,7 +334,7 @@ header_container {
 
 /* Базові стилі для кнопки бургер-меню */
 .burger {
-  display: none; /* Сховати бургер на великих екранах */
+  display: none; 
   flex-direction: column;
   gap: 5px;
   background: none;
@@ -380,14 +352,14 @@ header_container {
 /* Адаптивність для мобільних */
 @media (max-width: 744px) {
   .burger {
-    display: flex; /* Показати бургер на мобільних */
+    display: flex; 
   }
 
   .menu__list {
-    display: none; /* Ховати меню за замовчуванням */
+    display: none; 
     flex-direction: column;
     position: absolute;
-    top: 60px; /* Відступ від хедера */
+    top: 60px; 
     right: 20px;
     
     padding: 20px;
@@ -396,7 +368,7 @@ header_container {
   }
 
   .menu__list.active {
-    display: flex; /* Показати меню, коли бургер відкритий */
+    display: flex; 
   }
 }
 
