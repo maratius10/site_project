@@ -22,13 +22,8 @@ body {
     line-height: 1;
     color: #FFFFFF;
     background-color: #000;
-<<<<<<< HEAD
-    background-image: url('/img/other/background (1).png'); 
-    background-repeat: no-repeat; 
-=======
     background-image: url('/img/other/background_1.png'); 
-    background-repeat: no-repeat; /
->>>>>>> debc2a67387ed6a58c20e2d1649e255a328c021b
+    background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center; 
 
@@ -223,6 +218,31 @@ img {
   }
 }
 
+/* .header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px; 
+}
+
+
+@media (max-width: 1024px) {
+  .header__container {
+      gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__container {
+      gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__container {
+      gap: 5px;
+  }
+} */
 
 
 /*----------------------------------------*/
@@ -258,20 +278,53 @@ img {
 
 
 
-.header_container {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    display: flex;
-    gap: 500px;
-    align-items: center;
-    min-height: 84px;
+.header__container {
+  padding: 5px 20px; /* Відступи для заголовка */
+  display: flex;
+  justify-content: space-between; /* Простір між логотипом і правою частиною */
+  align-items: center;
+  min-height: 84px;
+  gap: 20px; /* Простір між елементами */
 }
+
+/* Логотип */
 .header__logo {
-  padding: 15px;
-  width: 145px;
-   height: 30px;
+  display: flex;
+  align-items: center;
+  width: auto; /* Логотип адаптивний */
+  height: 40px; /* Розмір логотипа */
+  padding: 0;
 }
-.header__menu {}
+
+/* Медіа-запити для адаптивності */
+@media (max-width: 768px) {
+  .header__container {
+      gap: 10px; /* Менший gap на планшетах */
+      padding: 5px 10px; /* Зменшуємо padding */
+  }
+
+  .header__logo {
+      height: 30px; /* Зменшуємо розмір логотипу */
+  }
+}
+
+@media (max-width: 480px) {
+  .header__container {
+      gap: 5px; /* Мінімальний gap для маленьких екранів */
+  }
+
+  .header__logo {
+      height: 25px; /* Ще менший розмір логотипу */
+  }
+}
+
+.header__menu {
+  display: flex;
+  align-items: center; /* Вирівнювання кнопок по центру вертикалі */
+  gap: 20px; /* Відстань між кнопками */
+  margin-left: auto; /* Вирівнюємо меню праворуч */
+}
+
 
 
 .menu {
@@ -336,7 +389,7 @@ header_container {
     position: absolute;
     top: 60px; /* Відступ від хедера */
     right: 20px;
-    background: #000;
+    
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -346,6 +399,8 @@ header_container {
     display: flex; /* Показати меню, коли бургер відкритий */
   }
 }
+
+
 /* ---------------------------------------------------------*/
 .main {
     padding-bottom: 400px;
